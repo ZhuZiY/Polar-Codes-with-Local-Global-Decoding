@@ -1,9 +1,9 @@
-# Outer Code Designs for Augmented and Local-Global Polar Code Architectures
+# Polar Codes with Local-Global Decoding
 
-We propose two novel methods to design outer polar codes for concatenated polar code architectures. These methods include a stopping set (SS) construction and a nonstationary density evolution (NDE) construction. Simulation results demonstrate the advantage of these methods over previously proposed constructions based on density evolution (DE) and LLR evolution. Hope this code is useful for peer researchers. If you use this code or parts of it in your research, please kindly cite our paper:
+We propose a coupled polar code architecture that supports both local and global decoding. This local-global construction is motivated by practical applications in data storage and transmission where reduced-latency recovery of sub-blocks of the coded information is required. Local decoding allows random access to sub-blocks of the full code block. When local decoding performance is insufficient, global decoding provides improved data reliability. The coupling scheme incorporates a systematic outer polar code and a partitioned mapping of the outer codeword to semipolarized bit-channels of the inner polar codes. Hope this code is useful for peer researchers. If you use this code or parts of it in your research, please kindly cite our paper:
 
-- **Related publication 1:** Ziyuan Zhu, and Paul H. Siegel, "[Outer Code Designs for Augmented and Local-Global Polar Code Architectures](https://www.arxiv.org/abs/2402.04486)," *submitted to 2024 IEEE International Symposium on Information Theory (ISIT 2024).*
-- **Related publication 2:** Ziyuan Zhu, Wei Wu, and Paul H. Siegel, "[Polar Codes with Local-Global Decoding](https://ieeexplore.ieee.org/document/10051996)," *published in 2022 IEEE 56th Asilomar Conference on Signals, Systems, and Computers.*
+- **Related publication 1:** Ziyuan Zhu, Wei Wu, and Paul H. Siegel, "[Polar Codes with Local-Global Decoding](https://ieeexplore.ieee.org/document/10051996)," *published in 2022 IEEE 56th Asilomar Conference on Signals, Systems, and Computers.*
+- **Related publication 2:** Ziyuan Zhu, and Paul H. Siegel, "[Outer Code Designs for Augmented and Local-Global Polar Code Architectures](https://www.arxiv.org/abs/2402.04486)," *submitted to 2024 IEEE International Symposium on Information Theory (ISIT 2024).*
 
 ---
 
