@@ -11,20 +11,17 @@ We propose a coupled polar code architecture that supports both local and global
 
 - Matlab R2022 (or later)
 
-<!---
-## Parameters
 
-- Users need to customize the *config.py* and *Polar-NN-MULT.ipynb* as
-  - `N` : Block length 
-  - `K` : Information length
-  - `ebn0` : Desired SNR range 
-  - `numOfWord` : Desired batch size 
-  - `bp_iter_num` : The number of iteration for BP
-  - `RNN` : Whether using recurrent architecture (1 = yes)
-  - `quantize_weight` : Different mechanism for weight quantization (0 for non-quantize, 1 for normal, 2 for binarized, 3 for bin, 4 for binarized bin)
-  - `bin_bit` : The number of different value
-  - `binary_prec` : The number of weight precision (binary_prec must >= bin_bit)
--->
+## Some comments
+
+- Some functions are overlapping. For instance, initPC1 to initPC8 are used to initialize the parameters for polar codes 1 to 8. The main content of these files is very similar, except for the parameter names. Readers can combine them into a single file. I didn't do it because of limited programming skill.
+  - `LGP_2parts.m` : Run this file to obtain the bit error rate (BER) and frame error rate (FER) results under global decoding for the local-global structure with M=2.
+  - `LGP_2parts_notConnected.m` : Run this file to obtain the bit error rate (BER) and frame error rate (FER) results under local decoding for the local-global structure with M=2.
+  - `LGP_4parts.m` : Run this file to obtain the bit error rate (BER) and frame error rate (FER) results under global decoding for the local-global structure with M=4.
+  - `LGP_4parts_notConnected.m` : Run this file to obtain the bit error rate (BER) and frame error rate (FER) results under local decoding for the local-global structure with M=4.
+  - `LGP_8parts.m` : Run this file to obtain the bit error rate (BER) and frame error rate (FER) results under global decoding for the local-global structure with M=8.
+  - `LGP_8parts_notConnected.m` : Run this file to obtain the bit error rate (BER) and frame error rate (FER) results under local decoding for the local-global structure with M=8.
+  
 ## Contact Information
 
 Ziyuan Zhu:
